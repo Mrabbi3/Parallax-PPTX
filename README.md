@@ -172,7 +172,7 @@ Source and build steps: [`examples/glass-flowers/`](examples/glass-flowers/)
 
 `SKILL.md` sits at the repo root, so **Code → Download ZIP** gives you an
 archive a skill uploader accepts as-is. For a smaller archive without the README
-screenshots, grab `parallax-presentation.zip` from the
+screenshots, grab `parallax-pptx.zip` from the
 [latest release](https://github.com/Mrabbi3/Parallax-PPTX/releases/latest), or
 build it yourself with `./package_skill.sh`.
 

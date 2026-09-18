@@ -1,9 +1,9 @@
 ---
-name: parallax-presentation
+name: parallax-pptx
 description: Build a cinematic parallax .pptx — a three-plane deck (panorama background, translucent midground, shaded cut-out foreground) wired together with PowerPoint Morph so the camera appears to fly through depth as slides advance. Use this whenever someone asks for a parallax presentation, a scroll/depth/cinematic deck, a "presentation like that video", or asks for a slide deck and supplies a reference image, photo, or colour palette to build it around. Also use it when a plain deck needs to look like a piece of design rather than a template. Do NOT use it for a quick internal status deck, a deck that must match a corporate template, or when the person explicitly wants Google Slides or Keynote as the native format.
 ---
 
-# Parallax Presentation
+# Parallax PPTX
 
 Builds a `.pptx` in which every slide is the **same three moving planes**, shot
 from a different camera position. PowerPoint's Morph transition interpolates
