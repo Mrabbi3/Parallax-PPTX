@@ -124,4 +124,4 @@ never end on someone else's footage.
 
 - `reference/SCHEMA.md` — every slide type and field
 - `reference/TECHNIQUE.md` — why Morph needs `!!` names, what the OOXML looks like
-- `../../examples/glass-flowers/deck.json` — a complete twelve-slide deck
+- `examples/glass-flowers/deck.json` — a complete twelve-slide deck

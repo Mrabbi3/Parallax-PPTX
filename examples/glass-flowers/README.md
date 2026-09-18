@@ -25,9 +25,9 @@ embedded video, a closing statement and references.
 ## Build it
 
 ```bash
-cd ../../skills/parallax-presentation/scripts
+cd ../../scripts
 python3 generate_layers.py --out layers/
-node build_deck.js ../../../examples/glass-flowers/deck.json --layers layers/ --out deck.pptx
+node build_deck.js ../examples/glass-flowers/deck.json --layers layers/ --out deck.pptx
 python3 morph_patch.py deck.pptx
 ```
 

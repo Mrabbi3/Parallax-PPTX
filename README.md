@@ -47,13 +47,13 @@ morph-patched `deck.pptx` in the repo root. The long way:
 npm install pptxgenjs
 pip install numpy pillow
 
-cd skills/parallax-presentation/scripts
+cd scripts
 
 # 1 — build the three planes (palette taken from a reference image if you have one)
 python3 generate_layers.py --out layers/ --palette-from reference.jpg
 
 # 2 — author content as JSON, build the deck
-node build_deck.js ../../../examples/glass-flowers/deck.json --layers layers/ --out deck.pptx
+node build_deck.js ../examples/glass-flowers/deck.json --layers layers/ --out deck.pptx
 
 # 3 — add the Morph transitions (pptxgenjs can't write them; see below)
 python3 morph_patch.py deck.pptx
@@ -124,7 +124,7 @@ Authoring is JSON. Inline `**double asterisks**` become accent-coloured bold:
 }
 ```
 
-Full field reference: [`reference/SCHEMA.md`](skills/parallax-presentation/reference/SCHEMA.md)
+Full field reference: [`reference/SCHEMA.md`](reference/SCHEMA.md)
 
 ---
 
@@ -149,7 +149,7 @@ same name on the next slide and interpolates position and scale, instead of
 guessing. With three big overlapping pictures per slide, guessing gives you a
 blink. Explicit matching gives you a camera move.
 
-Details: [`reference/TECHNIQUE.md`](skills/parallax-presentation/reference/TECHNIQUE.md)
+Details: [`reference/TECHNIQUE.md`](reference/TECHNIQUE.md)
 
 ---
 
@@ -170,14 +170,13 @@ Source and build steps: [`examples/glass-flowers/`](examples/glass-flowers/)
 
 ## Using it as a skill
 
-Drop `skills/parallax-presentation/` into your skills directory.
+`SKILL.md` sits at the repo root, so **Code → Download ZIP** gives you an
+archive a skill uploader accepts as-is. For a smaller archive without the README
+screenshots, grab `parallax-presentation.zip` from the
+[latest release](https://github.com/Mrabbi3/Parallax-PPTX/releases/latest), or
+build it yourself with `./package_skill.sh`.
 
-To upload it somewhere that expects a skill archive, run `./package_skill.sh`.
-It writes `dist/parallax-presentation.zip` with `SKILL.md` at the top level and
-the example bundled in — uploaders reject this repo's own "Download ZIP" because
-`SKILL.md` sits three folders deep in it.
-
-It triggers when
+The skill triggers when
 someone asks for a parallax deck, a cinematic or depth-based presentation, a deck
 "like that video", or hands over a reference image to build a deck around.
 

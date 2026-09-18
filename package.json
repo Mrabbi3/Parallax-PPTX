@@ -4,8 +4,8 @@
   "description": "Build cinematic parallax PowerPoint decks: three moving planes wired together with PowerPoint Morph.",
   "license": "MIT",
   "scripts": {
-    "layers": "python3 skills/parallax-presentation/scripts/generate_layers.py --out layers",
-    "example": "npm run layers && node skills/parallax-presentation/scripts/build_deck.js examples/glass-flowers/deck.json --layers layers --out deck.pptx && python3 skills/parallax-presentation/scripts/morph_patch.py deck.pptx"
+    "layers": "python3 scripts/generate_layers.py --out layers",
+    "example": "npm run layers && node scripts/build_deck.js examples/glass-flowers/deck.json --layers layers --out deck.pptx && python3 scripts/morph_patch.py deck.pptx"
   },
   "dependencies": {
     "pptxgenjs": "^3.12.0"
