@@ -33,6 +33,8 @@ from PIL import Image, ImageDraw, ImageFilter
 # ----------------------------------------------------------------------
 def hex2rgb(h):
     h = h.strip().lstrip("#")
+    if len(h) != 6 or any(c not in "0123456789abcdefABCDEF" for c in h):
+        sys.exit("not a 6-digit hex colour: %r (expected e.g. 0B2E4F)" % h)
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
@@ -354,6 +356,10 @@ def main():
     a = ap.parse_args()
 
     os.makedirs(a.out, exist_ok=True)
+
+    for label, given in (("--palette-from", a.palette_from), ("--cutout", a.cutout)):
+        if given and not os.path.exists(given):
+            sys.exit("no such file for %s: %s" % (label, given))
 
     if a.hues:
         hues = [hex2rgb(h) for h in a.hues.split(",")]

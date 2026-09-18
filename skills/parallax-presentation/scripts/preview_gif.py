@@ -11,7 +11,7 @@ the deck, and for putting a moving demo in a README.
     python3 preview_gif.py --layers layers/ --out preview.gif \
         --captions "Flowers That Never Fade|The Glass Flowers|A father, a son"
 """
-import argparse, math, os
+import argparse, math, os, sys
 from PIL import Image, ImageDraw, ImageFont
 
 SERIF = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
@@ -41,9 +41,15 @@ def main():
 
     W = a.width
     H = int(W * 9 / 16)
-    pano = Image.open(os.path.join(a.layers, "pano.jpg")).convert("RGBA")
-    mid = Image.open(os.path.join(a.layers, "mid.png")).convert("RGBA")
-    fg = Image.open(os.path.join(a.layers, "bloom.png")).convert("RGBA")
+    def layer(name):
+        p = os.path.join(a.layers, name)
+        if not os.path.exists(p):
+            sys.exit("missing layer: %s\nRun generate_layers.py --out %s first." % (p, a.layers))
+        return Image.open(p).convert("RGBA")
+
+    pano = layer("pano.jpg")
+    mid = layer("mid.png")
+    fg = layer("bloom.png")
 
     # scale planes so the far plane is ~2.3 screens wide, mid wider still
     pano_h = int(H * 1.20)

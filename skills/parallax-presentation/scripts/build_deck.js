@@ -33,7 +33,15 @@ const arg = (name, dflt) => {
   const i = argv.indexOf("--" + name);
   return i > -1 && argv[i + 1] ? argv[i + 1] : dflt;
 };
-const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
+let spec;
+try {
+  spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
+} catch (e) {
+  console.error(e.code === "ENOENT"
+    ? "no such deck file: " + specPath
+    : "could not parse " + specPath + ": " + e.message);
+  process.exit(1);
+}
 const LAYERS = path.resolve(arg("layers", path.join(path.dirname(specPath), "layers")));
 const OUT = path.resolve(arg("out", "deck.pptx"));
 
@@ -49,17 +57,21 @@ const slides = spec.slides || [];
 const N = slides.length;
 
 // ---------------------------------------------------------------- images
+function layerPath(file) {
+  const p = path.join(LAYERS, file);
+  if (!fs.existsSync(p)) {
+    console.error("missing layer: " + p + "\nRun generate_layers.py --out " + LAYERS + " first.");
+    process.exit(1);
+  }
+  return p;
+}
+
 const cache = {};
 function img(file) {
   if (!cache[file]) {
-    const p = path.join(LAYERS, file);
-    if (!fs.existsSync(p)) {
-      console.error("missing layer: " + p + "\nRun generate_layers.py first.");
-      process.exit(1);
-    }
+    const p = layerPath(file);
     const mime = file.endsWith(".png") ? "image/png" : "image/jpeg";
-    cache[file] = { data: mime + ";base64," + fs.readFileSync(p).toString("base64"),
-                    size: require("child_process") && null };
+    cache[file] = { data: mime + ";base64," + fs.readFileSync(p).toString("base64") };
   }
   return { data: cache[file].data };
 }
@@ -69,7 +81,7 @@ const aspectCache = {};
 function aspect(file) {
   if (aspectCache[file] !== undefined) return aspectCache[file];
   // png/jpeg header sniff, enough for the sizes we generate
-  const buf = fs.readFileSync(path.join(LAYERS, file));
+  const buf = fs.readFileSync(layerPath(file));
   if (buf[0] === 0x89) return (aspectCache[file] = buf.readUInt32BE(16) / buf.readUInt32BE(20));
   let i = 2;
   while (i < buf.length) {

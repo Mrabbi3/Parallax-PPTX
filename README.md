@@ -40,6 +40,9 @@ remember about a deck like this.
 
 ## Four commands
 
+In a hurry? `npm install && npm run example` runs all of it and leaves a
+morph-patched `deck.pptx` in the repo root. The long way:
+
 ```bash
 npm install pptxgenjs
 pip install numpy pillow
