@@ -170,7 +170,14 @@ Source and build steps: [`examples/glass-flowers/`](examples/glass-flowers/)
 
 ## Using it as a skill
 
-Drop `skills/parallax-presentation/` into your skills directory. It triggers when
+Drop `skills/parallax-presentation/` into your skills directory.
+
+To upload it somewhere that expects a skill archive, run `./package_skill.sh`.
+It writes `dist/parallax-presentation.zip` with `SKILL.md` at the top level and
+the example bundled in — uploaders reject this repo's own "Download ZIP" because
+`SKILL.md` sits three folders deep in it.
+
+It triggers when
 someone asks for a parallax deck, a cinematic or depth-based presentation, a deck
 "like that video", or hands over a reference image to build a deck around.
 

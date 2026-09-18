@@ -1,5 +1,6 @@
 # generated planes and builds
 layers/
+dist/
 *.pptx
 *.pdf
 preview.gif
