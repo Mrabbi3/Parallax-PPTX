@@ -1,0 +1,15 @@
+# generated planes and builds
+layers/
+*.pptx
+*.pdf
+preview.gif
+build/
+
+# deps
+node_modules/
+package-lock.json
+__pycache__/
+*.pyc
+
+# os
+.DS_Store

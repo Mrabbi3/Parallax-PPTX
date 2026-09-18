@@ -1,0 +1,12 @@
+{
+  "name": "parallax-pptx",
+  "version": "1.0.0",
+  "description": "Build cinematic parallax PowerPoint decks: three moving planes wired together with PowerPoint Morph.",
+  "license": "MIT",
+  "scripts": {
+    "example": "node skills/parallax-presentation/scripts/build_deck.js examples/glass-flowers/deck.json --layers layers --out deck.pptx"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}

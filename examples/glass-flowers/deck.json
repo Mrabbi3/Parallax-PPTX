@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "Flowers That Never Fade",
+    "author": "MD Rabbi",
+    "footer": "Glass Flowers   ·   MD Rabbi"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "eyebrow": "The Harvard Glass Flowers   ·   Part II: Influences",
+      "title": "Flowers That\nNever Fade",
+      "subtitle": "Gabrielle Zevin, Tomorrow, and Tomorrow, and Tomorrow",
+      "meta": "MD Rabbi        September 24, 2026        Part II, Chapter 1",
+      "notes": "Ask the room what the most interesting object on their campus is. Sam Masur asked that about Harvard, and the answer started a video game company. Start the clock."
+    },
+    {
+      "type": "quote",
+      "eyebrow": "01   introduce the reference",
+      "title": "The Glass Flowers",
+      "quote": "How do you stop\ntime and death?",
+      "cite": "Zevin, Part II, Ch. 1 — the narrator, on the Glass Flowers",
+      "list": [
+        { "label": "Marx picks the place", "text": "the most interesting place at Harvard" },
+        { "label": "Sam stages a proposal", "text": "in his head he is getting down on one knee" },
+        { "label": "The exhibit is closed", "text": "he asks her on a bench outside instead" }
+      ],
+      "footnote": "Read the passage aloud — Part II, Ch. 1, the paragraph beginning “They were the answer to a problem…”",
+      "notes": "Read from your own copy. Emphasise the closed door — the founding moment happens in front of a locked exhibit."
+    },
+    {
+      "type": "list",
+      "side": "right",
+      "eyebrow": "02   explain your choice",
+      "title": "I picked the thing\nI had never heard of",
+      "rows": [
+        { "label": "It was the one reference I could not picture", "text": "A shipwreck, Shakespeare, a wave print — those I knew. “Glass flowers” sounded like decoration." },
+        { "label": "They turn out to be scientific instruments", "text": "Goodale wanted life-like teaching specimens because the alternatives were crude papier-mâché and wax." },
+        { "label": "Fifty years spent defeating decay — then they modelled decay", "text": "That contradiction is the reason this reference is in the novel." },
+        { "label": "The personal connection", "text": "Two broke students making something great in a borrowed apartment. So is finding the door locked." }
+      ],
+      "footnote": "Then the research turned up two things I did not expect — slides 6 and 8.",
+      "notes": "About 60 seconds. Say plainly that you chose the unfamiliar option on purpose."
+    },
+    {
+      "type": "stats",
+      "eyebrow": "03   research — who made them",
+      "title": "A father, a son, and fifty years",
+      "stats": [
+        { "value": "4,300", "label": "glass models" },
+        { "value": "780", "label": "plant species" },
+        { "value": "50", "label": "years of work" },
+        { "value": "2", "label": "makers" }
+      ],
+      "paragraphs": [
+        "Leopold Blaschka (1822–1895) and his son Rudolf (1857–1939) worked in Hosterwitz, near Dresden, from a line of jewellers and glassmakers reaching back to the **fifteenth century**. They first became known for glass models of sea creatures — jellyfish, squid, anemones — sold to museums with no way to display soft-bodied animals.",
+        "In 1886 Professor George Lincoln Goodale, founder of Harvard's Botanical Museum, commissioned a botanical collection. **Elizabeth C. Ware and her daughter Mary Lee Ware** financed it and gave it to Harvard as a memorial to Dr. Charles Eliot Ware, Class of 1834."
+      ],
+      "timeline": [
+        { "year": "1886", "text": "Goodale commissions the collection" },
+        { "year": "1887", "text": "First models shipped — damaged in customs, still convincing" },
+        { "year": "1890–95", "text": "The most refined, most complex models" },
+        { "year": "1895", "text": "Leopold dies; Rudolf works on alone" },
+        { "year": "1906", "text": "Enamelled masterpieces — Red Maple, Oriental Planetree" },
+        { "year": "1936", "text": "Final shipment leaves Germany", "accent": true },
+        { "year": "2016", "text": "Gallery reopens after a historic renovation" }
+      ],
+      "notes": "Land the sea-creature origin — it explains why they were already expert at translucency. Point at three dates only."
+    },
+    {
+      "type": "steps",
+      "eyebrow": "04   research — how they were made",
+      "title": "Not blown. Built.",
+      "intro": "The Blaschkas used **lampworking** — glass tubes and rods softened in a flame and worked by hand at the bench. They made stems, leaves and petals separately, in batches, across many models at once, then assembled the finished plants.",
+      "steps": [
+        { "label": "Wire armature", "text": "Sections of glass tubing were strung onto wire like beads, giving projecting stems and leaves something to hold on to." },
+        { "label": "Assembly, eight stages", "text": "Tubes became stems; rods became leaves on wires; the two were joined and coloured; petals were pulled from rods, wired and coloured; corolla and calyx were formed last and strung on." },
+        { "label": "Glue and gelatin", "text": "Stamens and pistils were fixed with animal glue rendered from mammal hide. Raised leaf veins were built up in gelatin." },
+        { "label": "Cotton for hair", "text": "The furred leaves of the Common Mullein were made by blowing fine cotton flocking onto glue-tacky glass." },
+        { "label": "Paint, then enamel", "text": "Early models were cold-painted. After 1895 Rudolf brushed on coloured glass powders and fused them — hues nearly indistinguishable from a living plant.", "accent": true }
+      ],
+      "notes": "Correct the assumption out loud: this is not glassblowing. Bench work with a flame, wire, glue and cotton — closer to jewellery than to a furnace."
+    },
+    {
+      "type": "compare",
+      "eyebrow": "05   the thing that confused me",
+      "accent": "rose",
+      "title": "The novel gets the century wrong",
+      "left": {
+        "label": "what the novel says",
+        "paras": [
+          "A German father-and-son team made them **around the turn of the nineteenth century**, as a commission from the university.",
+          "That would put the work around 1800. Leopold Blaschka would not be born for another twenty-two years."
+        ]
+      },
+      "right": {
+        "label": "what the record says",
+        "paras": [
+          "Commissioned in **1886**, made from **1887 to 1936**. That is the turn of the twentieth century — and the family was Czech-German, not simply German.",
+          "Even Harvard's own pages give both 1886 and 1887 for the start, and both 780 and 847 species — depending on whether you count detail models."
+        ]
+      },
+      "footnote": "I am not presenting this as a mistake to catch the author out. It is a small error in a book obsessed with people who edit their own history — and it sits two paragraphs from Sam asking Sadie to misremember this exact day on his behalf. **The reader who checks gets rewarded.**",
+      "notes": "This is where the room wakes up. Take both panels slowly. Be fair — say you cannot prove intent."
+    },
+    {
+      "type": "split",
+      "eyebrow": "06   analyse its role — part one",
+      "title": "A thesis statement\ndisguised as a field trip",
+      "paragraphs": [
+        "The narrator asks how you preserve what cannot be preserved — how you stop time and death. Then, immediately: what is a video game about, if not the erasure of mortality?"
+      ],
+      "pull": "That is the whole novel in one paragraph, and Zevin puts it in the founding scene on purpose.",
+      "rows": [
+        { "label": "The title", "text": "“Tomorrow, and tomorrow, and tomorrow” is Macbeth on how days pile up toward death. A game gives you that sentence with the ending removed." },
+        { "label": "The mechanic", "text": "Respawning is a glass flower. Ichigo dies and returns unmarked — endless immaculate tomorrows, free of the evidence of having lived." },
+        { "label": "The character", "text": "Sam's body is the opposite. It keeps the damage. His foot is rebuilt so many times a doctor tells him there is a limit." },
+        { "label": "The closed door", "text": "They never get in. The preservation machine is right there, locked, while the two mortal people make their promise outside." }
+      ],
+      "notes": "The analytical core — slow down. If the class has not read Macbeth, give the one-line gloss."
+    },
+    {
+      "type": "feature",
+      "eyebrow": "07   analyse its role — part two",
+      "accent": "rose",
+      "fgAsset": "fruit.png",
+      "fgSlot": "left-mid",
+      "title": "The flowers that never\nfade are fading",
+      "paragraphs": [
+        "When Sadie visits in her mid-thirties, the blooms are not what move her. It is the Blaschkas' models of **decomposing fruit** — bruises and discolouration, held forever. Rudolf really did model diseased fruit into the 1930s."
+      ],
+      "panel": {
+        "label": "and the models themselves are deteriorating",
+        "bullets": [
+          "Rudolf added lead to his enamels; in humidity the lead salts bloom to the surface as white crust.",
+          "Vibration flexes the parts until glass is lost and the inner wire corrodes.",
+          "The animal glues yellow, the gelatin veins lift, and soot from coal heaters had to be swabbed off.",
+          "A California Poppy lost a petal. It was replaced with pigmented acrylic resin — not glass."
+        ]
+      },
+      "after": [
+        "So the object Zevin chose as her image of permanence is itself in conservation. Sam wants a body that does not keep the damage; the Glass Flowers keep it too. **Nothing is preserved. Some things are maintained.**"
+      ],
+      "pull": "Her first instinct is to tell Sam. They are not speaking.",
+      "notes": "The slide nobody else will have. Deliver the conservation list quickly, then stop on “Nothing is preserved. Some things are maintained.” Pause."
+    },
+    {
+      "type": "cards",
+      "eyebrow": "08   what would a reader miss?",
+      "title": "Three things, and one is the game's design",
+      "cards": [
+        { "title": "The joke about the poster", "text": "Sadie says it is pointless to advertise the Glass Flowers with a photograph, because the models already look real. If you do not know they are glass, the line is grumbling. If you do, it is her design philosophy: an imitation good enough stops being an imitation." },
+        { "title": "The woman in the gallery", "text": "An elderly visitor walks the whole exhibit, then asks Sadie where the glass flowers are. She thought she had been looking at real ones. That is the payoff of a fifty-year project — and the effect Sadie chases when she styles the game after a woodblock print." },
+        { "title": "Why a closed museum matters", "text": "Sam stages his proposal at a monument to permanence and is locked out of it. Their partnership begins with an absence he later asks to have written out of the record. Knowing what is behind that door turns the scene into an omen, not an anecdote." }
+      ],
+      "footnote": "A reader who skims past “Glass Flowers” still follows the plot. What they lose is **the reason Ichigo looks the way it does** — Sadie's rule that you make the limitation part of the style, that a convincing surface beats an accurate one.",
+      "notes": "Three beats, not one block. Say the words “what would be lost is…”"
+    },
+    {
+      "type": "video",
+      "eyebrow": "09   see it done",
+      "title": "Ninety seconds at the lamp",
+      "link": "https://www.youtube.com/embed/Y7cwdXpGWHU",
+      "paragraphs": [
+        "Harvard's **From the Hands of the Makers** includes a demonstration filmed at the Corning Museum of Glass on a nineteenth-century wooden lampworking table — the same kind of bench the Blaschkas used.",
+        "Watch what the hands are doing: the flame is small, the glass is worked slowly, and every part is made one at a time."
+      ],
+      "note": "Play 1:30 maximum — the assignment caps video at two minutes.",
+      "url": "youtube.com/watch?v=Y7cwdXpGWHU",
+      "notes": "Needs internet. Click play, run about ninety seconds, stop it yourself. If the embed fails, use a browser tab you loaded before class."
+    },
+    {
+      "type": "closing",
+      "eyebrow": "10   takeaway",
+      "title": "Sam asked for\nthe story to be\ntold wrong",
+      "paragraphs": [
+        "He wanted the version where the exhibit was open — where two people decided to build worlds inside a room that had already defeated death. Sadie tells it the other way, and calls telling it truthfully a small betrayal of him.",
+        "Games, glass models and the stories we tell about ourselves are all attempts to hold something still. None of them stop the thing they were built to stop — they only buy time, and someone has to keep paying for it. **The Blaschkas' most affecting work was never the perfect bloom. It was the rotting apple, kept.**"
+      ],
+      "notes": "Land on “the rotting apple, kept.” Stop talking — the line is the summary."
+    },
+    {
+      "type": "references",
+      "title": "Sources",
+      "items": [
+        { "cite": "Zevin, Gabrielle. Tomorrow, and Tomorrow, and Tomorrow.", "source": "Alfred A. Knopf, 2022. Part II, Ch. 1 and Ch. 5.", "plain": true },
+        { "cite": "Harvard Museum of Natural History, “Glass Flowers: The Ware Collection of Blaschka Glass Models of Plants.”", "source": "hmnh.harvard.edu/glass-flowers" },
+        { "cite": "Harvard Museum of Natural History, “From the Hands of the Makers.”", "source": "hmnh.harvard.edu/makers" },
+        { "cite": "Corning Museum of Glass, lampworking demonstration (video).", "source": "youtube.com/watch?v=Y7cwdXpGWHU" },
+        { "cite": "Harvard University Herbaria & Libraries, “The Glass Flowers.”", "source": "huh.harvard.edu/glass-flowers" },
+        { "cite": "Corning Museum of Glass, Rakow Research Library, “Leopold and Rudolf Blaschka — Glass Models.”", "source": "libguides.cmog.org/Blaschka" },
+        { "cite": "“120 Years Later, Harvard's Garden of Glass Flowers Is Still in Bloom,” Vice.", "source": "vice.com/en/article/harvard-glass-flower-garden-120-years" },
+        { "cite": "Artwork", "source": "All imagery is original work generated for this deck; the bloom is modelled after the Pride of Barbados specimen. No third-party images are reproduced.", "plain": true }
+      ],
+      "notes": "Have the HMNH gallery page open in a second tab in case anyone asks to see real specimen photos."
+    }
+  ]
+}
