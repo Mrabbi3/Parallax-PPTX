@@ -61,35 +61,47 @@ python3 preview_gif.py --layers layers/ --out preview.gif
 
 ---
 
+## Every deck is a different deck
+
+The three-plane rig is the only thing that repeats. Everything that gives a deck
+its identity is an input you supply:
+
+| what changes | how |
+|---|---|
+| palette | `--palette-from photo.jpg`, or `--hues "0B2E4F,1E6F6B,C2410C"` |
+| the subject on the near plane | `--cutout subject.png` — any RGBA cut-out |
+| the built-in subject's colours | `--bloom-in` / `--bloom-out` / `--bloom-tip`, `--petals` |
+| structure, copy, layout order | your own `deck.json` |
+
+The example further down is about glass flowers because that deck wanted a
+flower. A deck on subsea cable repair gets a cable ship on the near plane, a
+cold blue-green panorama, and the same camera move.
+
+---
+
 ## The near plane is rendered, not drawn
 
-`generate_layers.py` contains a small shading engine. Each petal is a parametric
-surface — width profile, cup, ruffle, twist — meshed into roughly 3,000 quads,
-lit with diffuse + specular + **back-lit translucency** (the term that makes thin
-glass look like thin glass) + rim light, then depth-sorted and painted back to
-front.
+If you don't hand it a cut-out, `generate_layers.py` renders one. The default
+subject is a bloom: each petal is a parametric surface — width profile, cup,
+ruffle, twist — meshed into roughly 3,000 quads, lit with diffuse + specular +
+**back-lit translucency** (the term that makes thin glass look like thin glass)
++ rim light, then depth-sorted and painted back to front.
 
-<div align="center">
-<img src="assets/slide-title.png" width="760" alt="Title slide, subject crossing the headline">
-</div>
+Recolour it with the `--bloom-*` flags, or pass `--cutout` and skip the renderer
+entirely. Either path gets the same dark separation halo — without it the near
+plane dissolves into the panorama.
 
-Colours come from the reference image if you pass one. `--palette-from` quantises
-the image, drops near-blacks, sorts what's left by hue, and deepens it so cream
-type stays legible on top.
+Panorama colours come from the reference image if you pass one. `--palette-from`
+quantises the image, drops near-blacks, sorts what's left by hue, and deepens it
+so cream type stays legible on top.
 
 ---
 
 ## Layouts
 
-Eleven slide types, each tuned so text never collides with the moving subject.
-Dense slides push the cut-out 80% off canvas — a single arc of petal at the
+Twelve slide types, each tuned so text never collides with the moving subject.
+Dense slides push the cut-out 80% off canvas — a single arc of the subject at the
 bottom edge is enough to keep the depth reading.
-
-<div align="center">
-<img src="assets/slide-steps.png" width="760" alt="Steps layout">
-<br><br>
-<img src="assets/slide-feature.png" width="760" alt="Feature layout with a second cut-out and a highlighted panel">
-</div>
 
 `title` · `quote` · `list` · `stats` · `steps` · `compare` · `split` ·
 `feature` · `cards` · `video` · `closing` · `references`
@@ -99,12 +111,12 @@ Authoring is JSON. Inline `**double asterisks**` become accent-coloured bold:
 ```json
 {
   "type": "steps",
-  "eyebrow": "04  how they were made",
-  "title": "Not blown. Built.",
-  "intro": "The Blaschkas used **lampworking** — glass tubes and rods softened in a flame.",
+  "eyebrow": "03  how a break is fixed",
+  "title": "Grapple, cut, splice.",
+  "intro": "A repair ship drags a **grapnel** along the seabed until it snags the cable.",
   "steps": [
-    { "label": "Wire armature", "text": "Glass tubing strung onto wire like beads." },
-    { "label": "Paint, then enamel", "text": "After 1895 Rudolf fused coloured glass powders.", "accent": true }
+    { "label": "Locate the fault", "text": "Pulse the line from shore and time the echo." },
+    { "label": "Splice and test", "text": "Fibres fused by hand in a moving sea state.", "accent": true }
   ]
 }
 ```
@@ -138,16 +150,18 @@ Details: [`reference/TECHNIQUE.md`](skills/parallax-presentation/reference/TECHN
 
 ---
 
-## Example
+## One worked example
 
 <div align="center">
-<img src="assets/gallery.png" width="900" alt="All twelve slides of the example deck">
+<img src="assets/gallery.png" width="900" alt="The twelve slides of the glass-flowers example deck">
 </div>
 
-A complete twelve-slide deck — research, comparison panels, an embedded video, a
-closing statement and a references slide — lives in
-[`examples/glass-flowers/deck.json`](examples/glass-flowers/deck.json). Build it
-with the four commands above.
+This is **one** deck, not a house style — a twelve-slide research deck on the
+Harvard Glass Flowers, kept in the repo because it exercises every layout in the
+schema. Its palette, subject and copy came from its own inputs; yours will look
+nothing like it.
+
+Source and build steps: [`examples/glass-flowers/`](examples/glass-flowers/)
 
 ---
 
@@ -167,8 +181,8 @@ the deck to images and actually look at every slide before handing it over.
 
 - **Never black.** The panorama sweeps a hue range; the darkest value is a deep
   saturated colour. Type is cream (`FFF7EC`), never pure white.
-- **One accent points.** Gold for emphasis, rose reserved for the single slide
-  carrying the twist.
+- **One accent.** Gold for emphasis, rose reserved for the single slide carrying
+  the twist.
 - **The cut-out needs a dark separation halo** or it dissolves into the
   panorama. Added automatically.
 - **Peek, don't crowd.** Full-frame subject is for the title and closing slides

@@ -4,6 +4,19 @@ A complete twelve-slide parallax deck: a pop-culture reference analysis of the
 Harvard Glass Flowers as they appear in Gabrielle Zevin's *Tomorrow, and
 Tomorrow, and Tomorrow*.
 
+<div align="center">
+<img src="../../assets/slide-title.png" width="720" alt="Title slide: the subject crosses in front of the headline">
+<br><br>
+<img src="../../assets/slide-steps.png" width="720" alt="Steps layout: a numbered process on a scrim">
+<br><br>
+<img src="../../assets/slide-feature.png" width="720" alt="Feature layout: second cut-out with a highlighted panel">
+<br><br>
+<img src="../../assets/slide-stats.png" width="720" alt="Stats layout: big numbers over a timeline">
+</div>
+
+*Slides from this deck specifically. The palette and the subject came from this
+deck's inputs — a different topic produces a different-looking deck.*
+
 It exercises every layout in the schema — title, pull quote, numbered list,
 stats with a timeline, a numbered process, a two-panel comparison, a split
 argument, an image-led feature with a highlighted panel, three cards, an
